@@ -1,3 +1,6 @@
+html {
+	box-sizing: border-box;
+}
 *,
 &:before,
 &:after {
@@ -5,6 +8,12 @@
 }
 body {
 	margin: 0;
+	color: $body-color;
+	font-family: 'Roboto', Arial, sans-serif;
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 1.57;
+	color: #413d4b;
 }
 img {
 	max-width: 100%;
