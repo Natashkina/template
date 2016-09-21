@@ -1,14 +1,33 @@
+$grid-columns: 12;
+$grid-gutter: 10px;
+
 .row {
 	margin: 0 -10px;
 }
 
-.column {
+.col {
 	padding: 0 10px;
 	float: left;
 }
 
-@for $i from 1 through 12 {
-	.item-#{$i} {
-		width: 100 / 12 * $i +%;
+$breakpoint : (
+	xs: 480px,
+	sm: 768px,
+	md: 980px,
+	lg: 1200px
+);
+
+
+@each $key, $val in $breakpoint {
+	@media all and  (min-width: $val) {
+		@for $i from 1 through $grid-columns {
+	.col-#{$key}-#{$i} {
+		width: 100 / $grid-columns * $i +%;
 	}
+}
+}
+}
+.container {
+	overflow: hidden;
+	padding: 10px;
 }
