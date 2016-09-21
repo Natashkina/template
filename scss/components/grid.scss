@@ -4,4 +4,11 @@
 
 .column {
 	padding: 0 10px;
+	float: left;
+}
+
+@for $i from 1 through 12 {
+	.item-#{$i} {
+		width: 100 / 12 * $i +%;
+	}
 }
