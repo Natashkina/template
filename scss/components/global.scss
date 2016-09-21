@@ -1,3 +1,6 @@
+$container-width: 1000px !default;
+$container-gutter: 0 10px !default;
+
 html {
 	box-sizing: border-box;
 }
@@ -23,8 +26,8 @@ img {
 }
 .container {
 	margin: auto;
-	max-width: 100px;
-	padding: 0 10px;
+	max-width: $container-width;
+	padding: $container-gutter;
 }
 .footer {
 	display: table-footer-group;
