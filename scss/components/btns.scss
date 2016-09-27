@@ -3,6 +3,7 @@ $btn-font-size: 16px !default;
 $btn-bg: #ddd !default;
 $btn-border: 1 px solid $btn-bg !default;
 $btn-border-radius: 4px !default;
+
 $btn-padding: 10px 20px !default;
 
 $btn-bg-hover: #ddd !default;
@@ -22,6 +23,7 @@ $btn-color-hover: #333 !default;
 		color: $color-hover;
 		background: $bg-hover;
 		border-color: $border-hover;
+		border-color: $btn-border-color-hover;
 	}
 }
 
@@ -45,5 +47,6 @@ $btn-color-hover: #333 !default;
         background: $btn-bg-hover;
         border: $btn-border-hover;
         color: $btn-color-hover;
+        
     }
 }

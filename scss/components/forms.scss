@@ -28,7 +28,14 @@ $form-label-margin-bottom: 4px !default;
 		opacity: 1;
 	}
 }
-
+@mixin form-size($height, $padding, $font-size, $border-radius: $form-border-radius, $line-height: $form-line-height) {
+    $padding-y: ($height - ($font-size * $form-line-height)) / 2;
+    font-size: $font-size;
+    border-radius: $border-radius;
+    height: $height;
+    line-height: $line-height;
+    padding: $padding-y $padding;
+}
 .form {
 	&-group {
 		margin-bottom: $form-margin-bottom;

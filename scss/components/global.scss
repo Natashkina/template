@@ -1,8 +1,9 @@
-$container-width: 1000px !default;
+$container-width: 1170px !default;
 $container-gutter: 0 10px !default;
 
 html {
 	box-sizing: border-box;
+	-webkit-text-adjust: 100%;
 }
 *,
 &:before,
